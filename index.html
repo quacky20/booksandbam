@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books and Bams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        header {
+            color: white;
+            font-family: Roboto Condensed;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            width: 30%;
+            cursor: pointer;
+        }
+        
+        .left img{
+            display: inline-block;
+            filter: invert(100%);
+            width: 50px;
+        }
+
+        .left div{
+            display: inline;
+            position: absolute;
+            left: 60px;
+            top: 9px;
+            font-size: 30px;  
+        }
+
+        .middle {
+            display: block;
+            width: 40%;
+            margin: 25px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .right img{
+            display: inline-block;
+            filter: invert(100%);
+            width: 35px;
+            padding-left: 10px;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            display: block;
+            margin: 0px auto;
+        }
+
+        .navbar li {
+            padding: 15px 25px 15px 25px;
+            display: inline;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .navbar li:hover{
+            font-weight: bold;
+            font-size: 110%;
+            border-bottom: 2px solid white;
+        }
+
+        .container{
+            
+            /* border: 2px solid white; */
+            width: 1100px;
+            margin: auto;
+            margin-top: 70px;
+        }
+
+        .item{
+            display: inline-block;
+            /* border: 2px solid white; */
+            width: 250px;
+            height: 300px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+            background-color: aliceblue;
+            border-radius: 15px;
+        }
+
+        .item:hover{
+            width:255px;
+            height: 305px;
+        }
+
+        .desc{
+            display: inline-block;
+            /* border: 2px solid white; */
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            color: white;
+            font-family: Roboto Condensed;
+            font-size: 20px;
+        }
+
+        #it1{
+            background-image: url(1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #it2{
+            background-image: url(2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #it3{
+            background-image: url(3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #it4{
+            background-image: url(4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #it5{
+            background-image: url(5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #it6{
+            background-image: url(6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #it7{
+            background-image: url(7.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #it8{
+            background-image: url(8.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container2{
+            /* border: 2px solid white; */
+            width: 1100px;
+            margin: auto;
+            margin-top: 200px;
+            width: 762px;   
+            margin-bottom: 150px;         
+        }
+        
+        .boxes{
+            display: inline-block;
+            border-radius: 50px;
+        }
+        #b1{
+            /* position: absolute; */
+            background-color: white;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            left: 54px;
+            background-image: url(/project1/store.jpg);
+            background-size: cover;
+            background-position: center;
+            float: left;
+        }
+
+        #b1:hover{
+            height: 310px;
+            width: 310px;
+        }
+
+        #b2{
+            border: 2px solid white;
+            height: 200px;
+            width: 400px;
+            margin-top: 50px ;
+            margin-bottom: 50px;
+            padding-left: 60px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            padding-right: 10px;
+        }
+
+        #b2 #text{
+            font-family: Roboto Condensed;
+            color: white;
+        }
+
+        .socials{
+            /* border: 2px solid white; */
+            width: 308px;
+            margin: auto;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        .icons{
+            display: inline-block;
+            /* border: 2px solid white; */
+            width: 40px;
+            height: 40px;
+            filter: invert(100%);
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="171322.png" alt="">
+            <div>
+                Books and Bams
+            </div>
+        </div>
+        <!-- for navbar -->
+        <div class="middle">
+            <ul class="navbar">
+                <li>Home</li>
+                <li>Categories</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <!-- for hamburg menu -->
+        <div class="right">
+            <img src="user-account-icon-for-your-design-only-free-png.webp" alt="">
+            <img src="1200px-Hamburger_icon.svg.webp" alt="">
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="https://www.amazon.in/Sun-also-Star-Nicola-Yoon/dp/0552574244/ref=sr_1_1?crid=MS0N0LPS8AZX&dib=eyJ2IjoiMSJ9.laVGRv7aRc5cWG5nNiu9tVGZ5RjjNppY3RXW8HaLfzg35LYGVLKv04_uUsgAXgXDshl0QCmWVVupkgpnKiIEwR10jOQOpoT-rDtNfx6ny35MBR-HX_lLkodbzj8L2YMLvGTARDClAhJgJj66ELmtl7NqxIy7ZEBt7aSnqNrNIXDRv3Bk91t0P8oHIhaq-vgplrbzAR-XUvnRzvjbmO91i1hA46CZLcNCzHMAZ9cH0fc.6_lX8Qi84uiQ-W9YDcyzhmeiqy4fqYV7Wp3ZAV338Ew&dib_tag=se&keywords=the+sun+is+also+a+star&qid=1719467826&sprefix=the+sun+is+als%2Caps%2C226&sr=8-1" target="_blank"><div class="item" id="it1"></div></a>
+        <a href="https://www.amazon.in/Hunger-Games-Trilogy-white-anniversary/dp/1338323644/ref=sr_1_1?crid=10BOTZF42KIFV&dib=eyJ2IjoiMSJ9.oTIi9E111YGX5VT-LqjDddSfWUJD8bce_PSrVkoVwRc1wtMiaBMydDInt5GBZCVclnpZBmzRGUgjIerwj51R_x5EidnzNvpSFI1umT-46xadxhf7FvdXIiAydB3XknEjyVcrkhxtwp8BN1YlkEPFWZu3w0cmlczTlTUwwcumZdbD7-sRu9FSOojcEyG-Z3WP_2hOoDKyffCUQhjlnYqvJCXCW23UGsbuzJO33LvQjSc.g-m_UKoy0vWJve3zY-E91Se4Bomkj92slt4Auh_3TS8&dib_tag=se&keywords=hunger+games+special+edition&qid=1719467857&sprefix=the+hunger+games+sp%2Caps%2C226&sr=8-1" target="_blank"><div class="item" id="it2"></div></a>
+        <a href="https://www.amazon.in/Blue-Lock-5-Muneyuki-Kaneshiro/dp/1646516621/ref=sr_1_1?crid=128YBGXGFIVSH&dib=eyJ2IjoiMSJ9.gMalHbKMikfb3Xook0_rcHKLSXoeU3afGkqbKYQ-cx8ky1omqEUE9Ep9ijRKIT6d2_kU1BqZTU2hJP-UJ2ana50gAb_I32-8FxT7wSLBytqVUvWzP60HDDZAWZ7PuSoOWEvKKiZJFQe21BrFJ8cZEcuysAQl88Tfvgoy6RZ5U8K9SrYNEQJ-gu0Hk88mV6CMByWKDhoBMgTXdOMWIs_JazLLpn51J6L3E6LNv2Fa1XU.iKaetjdLHAcfBpEK4dPj_TwenDB05qJPrzNkXDFXphk&dib_tag=se&keywords=blue+lock+volume+5&qid=1719467873&sprefix=blue+lock+volume+%2Caps%2C232&sr=8-1" target="_blank"><div class="item" id="it3"></div></a>
+        <a href="https://www.amazon.in/Austens-Pride-Prejudice-Book-Table/dp/0451479912/ref=sr_1_10?crid=126BL84QDBHCL&dib=eyJ2IjoiMSJ9.ybtso8yePgMxOP2-dWeQVpAVYLs8YCLktvD6KxeLxKoL0N90yL1KlkhQJZCwStE_SH1gly5oZOJPXMhQrRstYe5Re0BGy63JG5DdTJwYFx1e9T1EJWR-Xsi-RrRsauEF4o1lg8hdmTBTlKSJiC8D7OT3bTCgg2WtcsSkWXdF61UOmMipr2tdmYRqYl2hKw9_CHCmcVUlI6PrPi-ZxNK-RtthpOGpw0-JWxK227SUU00.-Q1bguhWi53WQ_i5By15xn0mj8u89UpiyQPtd3dwi0c&dib_tag=se&keywords=pride+and+prejudice&qid=1719467889&sprefix=pride+and+%2Caps%2C231&sr=8-10" target="_blank"><div class="item" id="it4"></div></a>
+        <div class="desc">The Sun is Also a Star by Nicola Yoon</div>
+        <div class="desc">The Hunger Games by Suzanne Collins</div>
+        <div class="desc">Blue Lock Vol. 5 by Muneyuki Kaneshira</div>
+        <div class="desc">Pride and Prejudice by Jane Austen</div>
+        <a href="https://www.amazon.in/Kill-Mockingbird-Harper-Lee/dp/0099549484/ref=sr_1_1?crid=MAOEBTDVO7D&dib=eyJ2IjoiMSJ9.r9zfs01fIurXrH06faLvJ8PKJsBWYvNdfuRGXeFDJLuycQZ6sg22vxCHSxvyBoquEJpfwYwg8dayc4UlCy3cTySD3lHKb2MEArYgENmhrsbXm_DdgyRbqI1BI1CxNXY-nPUPJWi_1CHPcr71bM0tBoq86ZkDhe8JUO1eEB20ib656XEp2EjN1sQR73oFtn4GY2pU67F_R5bg33Hs7WIt1STtQ_4YjoDJYkanZ2Cqe0E.A7NbNADb4PKk14Tc5vMUHnXekphrl4Ah7D_AUgIVn3Q&dib_tag=se&keywords=to+kill+a+mockingbird&qid=1719467917&sprefix=to+kill%2Caps%2C235&sr=8-1" target="_blank"><div class="item" id="it5"></div></a>
+        <a href="https://www.amazon.in/Thirteen-Reasons-Why-TV-Tie/dp/0141387777/ref=sr_1_1?crid=RKSPIE1O26WD&dib=eyJ2IjoiMSJ9.j2t1AQvhoUhDx_A6qCsn8YBf-ot43vREYnKsqZ664LW3CvlnOanwF9aBzd61sLJnab4YKvFpD7wd3aG3VdNOKr6A5p1h7xkS-Sx7igDtXFAou-8JqPMa5ZuFosDsJ-bXFqm2V1Fib4OKAFgcJutW_iSLwbz1J3gUUcY7B4POrcGJ7lxpbHydkSerWdj3bQFCgtNU5JonfTmgAzBv0gs42UJQd6s-vDM2z6dDye9NAvI.XSKiaZBWrCy0wiZqYC5ONxTFLJy_bGbA48zedPQ_q6s&dib_tag=se&keywords=13+reason+why+book&qid=1719467936&sprefix=13+reason+why+book+%2Caps%2C228&sr=8-1" target="_blank"><div class="item" id="it6"></div></a>
+        <a href="https://www.amazon.in/Percy-Jackson-Lightning-Thief/dp/B078T17TCV/ref=sr_1_13?crid=1HAEOEXYCIESX&dib=eyJ2IjoiMSJ9.0bEs7_yrR_Qif_3UJ5L4GKK-SqNUfte7mi2pIpCcfzhA4hA5RV8rEOtxFawM_80VKyOIf107RKlXjUcqpOmFigHLea5uKsXRFVhx2jItTZAiqqZkl9CIu23tISo1QGuBJeCDnDdose2Qt69FowPOXyaFEjW8Rt-SYjdfBwkvsfg8C-XECnb3KnVCkplRyzextaVH27ww5VoY2wFxx8M28Ry6WdOqs0v6RBE1vY-gX5Y.f6CGliGKuPXuGSpcziCyE_JPI5G8dP5luqy70FgUuw0&dib_tag=se&keywords=percy+jackson+and+the+lightning+thief&qid=1719467951&sprefix=percy%2Caps%2C225&sr=8-13" target="_blank"><div class="item" id="it7"></div></a>
+        <a href="https://www.amazon.in/Alchemist-25th-Anniversary-Paulo-Coelho/dp/0062390627/ref=sr_1_5?crid=3UQHVRDNLJBSF&dib=eyJ2IjoiMSJ9.k8e-2GhwBvoJ3otjpPjZUZoWTP57vqxK7W3O0I9idD2Ed67E66QYfAZhrfwX7hOTCcuKc8GAS5s2N4oB9TQ21TyhrAXYXex7f2Xlu9l0HHKWLa_D815SzSrJabJVgUhPBkU05gxU8SEB2_74rNeclnaMCMLGWeJnkIBYcBXMLOq9fhEx9brVZ8VpvIpuxpW0ZLMM3ygJY5mf6gX_PXfwimEX-QkceAZMiWRWRE4CZNE.JlGR8egF1CnS_Gsv8xLW6vepOJloqtV4gdqIHtiw60E&dib_tag=se&keywords=the+alchemist&qid=1719467977&sprefix=the+alh%2Caps%2C238&sr=8-5" target="_blank"><div class="item" id="it8"></div></a>
+        <div class="desc">To Kill a Mockingbird by Harper Lee</div>
+        <div class="desc">13 Reasons Why by Jay Usher</div>
+        <div class="desc">Percy Jackson and The Lightning Thief by Rick Riordan</div>
+        <div class="desc">The Alchemist by Paulo Coelo</div>
+    </div>
+
+    <div class="container2">
+        <div class="boxes" id="b1">
+            
+        </div>
+        <div class="boxes" id="b2">
+            <div id="text">
+                <h2>About Us</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quaerat hic, omnis saepe consequuntur alias tempore nemo perspiciatis iure esse.
+            </div>
+        </div>
+    </div>
+
+    <div class="socials">
+        <div class="icons"><a href="https://facebook.com" target="_blank"><img src="facebook.png" width="40px" height="40px"></a></div>
+        <div class="icons"><a href="https://www.instagram.com/k.o.n_._/" target="_blank"><img src="instagram-logo.png" width="35px" height="35px"></a></div>
+        <div class="icons"><a href="https://www.youtube.com/channel/UC9BAKcXkDPyv_rgEEVKQa5w" target="_blank"><img src="youtube.png" width="40px" height="40px"></a></div>
+    </div>
+</body>
+
+</html>
